@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Re-Nerfing: Improving Novel Views Synthesis through Novel Views Synthesis">
+  <meta name="keywords" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Re-Nerfing: Improving Novel Views Synthesis through Novel Views Synthesis</title>
+  
+<!-- Google tag (gtag.js) -->
+<!--script async src="https://www.googletagmanager.com/gtag/js?id=G-PYXS918KCT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PYXS918KCT');
+</script-->
+
+  <!--link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet"-->
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+ 
+   <link rel="stylesheet" href="./static/css/fonts.css">
+
+  <!--link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css"-->
+  <!--link rel="stylesheet" href="./static/css/fontawesome.all.min.css"-->
+  <!--link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"-->
+  <link rel="stylesheet"
+        href="./static/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/favicon.svg">
+
+  <script src="./static/js/jquery.min.js"></script>
+  <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script-->
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <!--script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script-->
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body" style="padding-top:6rem">
+  <!-- style="background-color: rgb(240,240,240);"-->
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Re-Nerfing: Improving Novel Views Synthesis through Novel Views Synthesis</h1>
+
+          <!--div class="is-size-4 publication-authors">
+            <span class="author-block" style="padding-top:1.5rem; padding-bottom:1rem;"><b>ICCV 2023</b></span>
+          </div-->
+          
+          <div class="is-size-5 publication-authors" style="padding-bottom:1rem">
+            <span class="author-block">
+              <a href="https://www.cs.cit.tum.de/en/camp/members/felix-tristram/" target="_blank" rel="noopener noreferrer">Felix Tristram</a><sup>*,1</sup></span>
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.cit.tum.de/camp/members/stefano-gasperini/" target="_blank" rel="noopener noreferrer">Stefano Gasperini</a><sup>*,1,2</sup></span>
+            <span class="author-block">
+              <a href="https://www.cs.cit.tum.de/camp/members/cv-nassir-navab/nassir-navab/" target="_blank" rel="noopener noreferrer">Nassir Navab</a><sup>1</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://www.cs.cit.tum.de/camp/members/senior-research-scientists/federico-tombari/" target="_blank" rel="noopener noreferrer">Federico Tombari</a><sup>1,3</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup> <a href="https://www.cs.cit.tum.de/camp/start" target="_blank" rel="noopener noreferrer">Technical University of Munich</a></span>
+            <span class="author-block"><sup>2</sup> <a href="https://www.visualais.io" target="_blank" rel="noopener noreferrer">VisualAIs</a></span>
+            <span class="author-block"><sup>3</sup> <a href="https://research.google/people/FedericoTombari"  target="_blank" rel="noopener noreferrer">Google</a></span>
+          </div>
+          
+          <div class="is-size-5 publication-authors" style="padding-bottom:1rem">
+            <span class="author-block"><sup>*</sup> The authors contributed equally.</span>
+          </div>
+            
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!--span class="link-block">
+                <a href="tbd_link"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>ICCV Paper</span>
+                </a>
+              </span-->
+              <!--span class="link-block">
+                <a href="https://openaccess.thecvf.com/content/ICCV2023/html/Gasperini_Robust_Monocular_Depth_Estimation_under_Challenging_Conditions_ICCV_2023_paper.html" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark top-button" style="background-color: rgb(255, 214, 0);color: black;">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>ICCV Paper</span>
+                </a>
+              </span-->
+              <!-- rgb(248, 227, 67) -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2312.02255" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark top-button">
+                   <!-- rgb(248, 227, 67) -->
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark top-button">
+                   <!--  rgb(239,134,48)-->
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code (coming soon)</span>
+                  </a>
+              </span>
+              <!-- Video Link. 
+              <span class="link-block">
+                <a href="tbd_link"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video...</span>
+                </a>
+              </span> -->
+              <!-- Dataset Link. -->
+              <!--span class="link-block">
+                <a href="https://forms.gle/31w2TvtTiVNyPb916" target="_blank" rel="noopener noreferrer"
+                   class="external-link button is-normal is-rounded is-dark top-button" style="background-color: rgb(201, 0, 201);color: black;">
+                  <span class="icon">
+                      <i class="far fa-images"></i>
+                  </span>
+                  <span>Translated Images</span>
+                  </a>
+                </span-->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--section class="section" style="padding-top:1rem;padding-bottom:4rem">
+  <div class="container is-max-desktop" style="background-color: rgb(240,240,240);padding-top:4rem;padding-bottom:4rem">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3" style="margin-bottom:0.7rem">Can you see the trees?</h2>
+        <div>
+          <p>Hint: increase the brightness and look closely.</p>
+        </div>
+        <div class="">
+          <img src="images/trees.png"></img>
+        </div>
+        <div>
+          <p>Our monocular model outputs robust depth estimates in all conditions, even in the dark.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section-->
+
+<section class="section" style="padding-top:0">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <!--div class="columns is-centered has-text-justified">
+      <div class="column is-four-fifths" style="padding-bottom:3rem">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+           abstract tbd
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+    <div class="columns is-centered has-text-justified">
+      <div class="column is-four-fifths" style="padding-bottom:3rem">
+        <h2 class="title is-3" style="margin-bottom:0">Motivation</h2>
+        <div class="">
+          <!--img src="images/factors.png"></img-->
+        </div>
+        <p>
+</br>
+NeRF and 3D Gaussian Splatting have achieved remarkable results, revolutionizing 3D scene representation and rendering. However, their requirement for many high-quality images limits their applicability. Many have focused on sparse view settings to mitigate this, where only a handful of views are available.
+</br></br>
+Complex geometries and large-scale environments are particularly problematic in sparse settings, leading to artifacts such as floaters. Several works have introduced depth and structural priors to mitigate this, but these are hard to obtain in practice.
+        </p>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-justified">
+      <div class="column is-four-fifths" style="padding-bottom:3rem">
+        <h2 class="title is-3" style="margin-bottom:1rem">Method</h2>
+        <div class="" style="margin-bottom:1rem">
+          <img src="images/framework.png"></img>
+        </div>
+        <p>
+In this paper, we propose Re-Nerfing, a simple and effective method to improve novel view synthesis without using extra data, models, or information.
+</br></br>
+Re-Nerfing is a flexible and iterative augmentation strategy for both NeRF-based and Gaussian Splatting-based methods. As shown in the figure above, first, we train a baseline model with the available views (green). Then, we use this model to synthesize novel views of the same scene or object to improve the view coverage (orange). Later, we add these synthesized views to the training data and use them to train a new model. This process can be repeated iteratively by using the new model to synthesize novel views. Specifically, for NeRF-based methods, we compute the model uncertainty (blue) and discard uncertain regions of the synthetic views to provide a higher-quality signal to the new model.
+        </p>
+      </div>
+    </div>
+    <div class="columns is-centered has-text-justified">
+      <div class="column is-four-fifths" style="padding-bottom:3rem">
+        <h2 class="title is-3" style="margin-bottom:0">Results</h2>
+        <div class="">
+          <img src="images/teaser.png"></img>
+          <img src="images/qualitative.png"></img>
+          <p>
+Re-Nerfing improves significantly upon various pipelines, such as 3D Gaussian Splatting (3DGS), PyNeRF, and Instant-NGP. By adding more views, albeit synthetic, the proposed method reduces artifacts and mitigates the shape-radiance ambiguity.
+        </p>
+        </div>
+      </div>
+    </div>
+        <!--Qualitative results on nuScenes between the fully-supervised AdaBins without and with our approach, and the self-supervised Monodepth2 without and with our method.-->
+    <!-- Paper video. -->
+    <!--div class="columns is-centered has-text-justified">
+      <div class="column is-four-fifths" style="padding-bottom:3rem">
+        <h2 class="title is-3">Video</h2>
+        <div class="">
+          <!--iframe src="https://www.youtube.com/embed/LyugDwqfelQ?rel=0&amp;showinfo=0"
+                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe-->
+        </div>
+      </div>
+    </div>
+    <!--/ Paper video. -->
+  </div>
+</section>
+
+
+<section class="section" style="padding-top:1.5rem;padding-bottom:6rem;" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre style="background-color: rgb(240,240,240);"><code>@article{tristram2023renerfing,
+  title={{Re-Nerfing}: Improving Novel Views Synthesis through Novel Views Synthesis},
+  author={Tristram, Felix and Gasperini, Stefano and Navab, Nassir and Tombari, Federico},
+  journal={arXiv preprint arXiv:2312.02255},
+  year={2023}
+}
+</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer" style="padding-bottom:3rem">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8 has-text-justified">
+        <div class="content">
+          <p>
+            This website was adapted from <a href"https://nerfies.github.io" target="_blank" rel="noopener noreferrer">Nerfies</a> and <a href="https://md4all.github.io" target="_blank" rel="noopener noreferrer">md4all</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            You can use the <a
+              href="https://github.com/md4all/md4all.github.io">source code of this website</a>, we ask that you link back to this page in the footer. Please also remember to remove the analytics code in the website's header.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- GDPR Banner -->
+<div id="gdpr-banner">
+    This page is hosted on GitHub Pages. For analytics and security purposes, GitHub may collect some of your data, such as your IP address and user agent. The data may be transferred to servers outside the European Economic Area. This page does not control GitHub's data collection and processing activities. By using this webpage, you consent to any data collection and processing by GitHub under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank" rel="noopener noreferrer" target="_blank">their terms and privacy policy</a>. This page uses <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" target="_blank">Google Analytics</a> to assess the community's interest in this work.
+    <button id="accept-gdpr">I agree</button>
+  </div>
+  
+<script>
+    // JavaScript to handle the banner
+    document.addEventListener("DOMContentLoaded", function () {
+      const gdprBanner = document.getElementById("gdpr-banner");
+      const acceptButton = document.getElementById("accept-gdpr");
+
+      // Check if the user has already accepted
+      if (localStorage.getItem("gdprAccepted") === "true") {
+        gdprBanner.style.display = "none";
+      }
+
+      // When the user clicks "Accept", hide the banner and set the localStorage item
+      acceptButton.addEventListener("click", function () {
+        gdprBanner.style.display = "none";
+        localStorage.setItem("gdprAccepted", "true");
+      });
+    });
+  </script>
+
+</body>
+</html>
